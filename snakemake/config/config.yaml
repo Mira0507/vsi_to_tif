@@ -1,5 +1,5 @@
 # Specify path to conda env
-conda_env: '../../env'
+conda_env: '../env'
 
 # Specify path to a tab-separated sampletable, consisting of 
 # the following columns:
@@ -8,7 +8,7 @@ conda_env: '../../env'
 sampletable: 'config/sampletable.txt'
 
 # Output directory
-outdir: '../../images/converted'
+outdir: '../images/converted'
 
 # Specify the series to be converted. 
 # NOTE: 
