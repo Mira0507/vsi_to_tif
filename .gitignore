@@ -1,0 +1,8 @@
+*.DS_Store
+*.Rhistory
+*.html
+images/
+bftools/
+*.snakemake/
+*Snakefile.log
+*logs/

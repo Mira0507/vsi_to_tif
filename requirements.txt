@@ -1,0 +1,9 @@
+python=3.11
+snakemake<9
+snakemake-executor-plugin-cluster-generic
+bftools
+wget
+jupyter
+r-base
+r-tidyverse
+r-reticulate
