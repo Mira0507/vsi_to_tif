@@ -7,8 +7,17 @@ using the [Olympus VS200 scanner](https://www.olympus-global.com/news/2019/nr014
 have limited compatibility with image processing tools. Converting individual `vsi` 
 images using [Fiji](https://imagej.net/software/fiji/) or 
 [QuPath](https://qupath.github.io/) has been a common solution with substantial effort and time, 
-depending on the input load. Here, I’d like to propose a simple Snakemake pipeline 
-that allows parallel conversion of multiple input `vsi` images at once.
+depending on the input load. 
+
+Here, I’d like to propose a simple Snakemake pipeline that allows parallel 
+conversion of multiple input `vsi` images at once. This approach uses 
+[`bftools`](https://bio-formats.readthedocs.io/en/v8.3.0/users/comlinetools/index.html), 
+a collection of command-line tools provided by 
+the [Bio-Formats](https://bio-formats.readthedocs.io/en/v8.3.0/about/index.html) library.
+Refer to the following documentation for more information about parameter setting:
+
+- [`showinf`](https://bio-formats.readthedocs.io/en/v8.3.0/users/comlinetools/display.html)
+- [`bfconvert`](https://bio-formats.readthedocs.io/en/v8.3.0/users/comlinetools/conversion.html)
 
 ## Package installation
 
