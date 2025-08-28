@@ -40,3 +40,36 @@ Specifying sample names and corresponding input image paths
 Wrapper script running `bftools` for image conversion
 
 ## Setting up Snakemake profile
+
+This demonstration is for users of [NIH Biowulf](https://hpc.nih.gov/). If you are an NIH user, 
+follow the one-time setup below. Otherwise, consult with your HPC staff.
+
+1. Clone the [snakemake_profile](https://github.com/NIH-HPC/snakemake_profile) GitHub repository
+
+```bash
+# Clone the repo for Snakemake<8
+$ git clone https://github.com/NIH-HPC/snakemake_profile.git <path/to/snakemake_profile>
+
+# Clone the repo for Snakemake>=8
+$ git clone https://github.com/NIH-HPC/snakemake_profile.git <path/to/snakemake_profile_v8>
+$ cd <path/to/snakemake_profile_v8>
+# Change active branch to make it compatible with Snakemake>=8
+$ git checkout snakemake8
+```
+
+2. Add the path to your `snakemake_profile` to your bash configuration file (`~/.bashrc`)
+
+```bash
+# Add env var for Snakemake<8
+$ echo '$SNAKEMAKE_PROFILE=<path/to/snakemake_profile>' >> ~/.bashrc
+# Add env var for Snakemake>=8
+$ echo '$SNAKEMAKE_PROFILE_V8=<path/to/snakemake_profile_v8>' >> ~/.bashrc
+```
+
+3. Update your bash configuration
+
+```bash
+$ source ~/.bashrc
+```
+
+
