@@ -43,6 +43,7 @@ Wrapper script running `bftools` for image conversion
 
 This demonstration is for users of [NIH Biowulf](https://hpc.nih.gov/). If you are an NIH user, 
 follow the one-time setup below. Otherwise, consult with your HPC staff.
+If you don't use HPC, disregard the current section.
 
 1. Clone the [snakemake_profile](https://github.com/NIH-HPC/snakemake_profile) GitHub repository
 
@@ -57,7 +58,7 @@ $ cd <path/to/snakemake_profile_v8>
 $ git checkout snakemake8
 ```
 
-2. Add the path to your `snakemake_profile` to your bash configuration file (`~/.bashrc`)
+2. Add the paths to your Snakemake profile to your bash configuration (`~/.bashrc`)
 
 ```bash
 # Add env var for Snakemake<8
