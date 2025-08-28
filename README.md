@@ -29,7 +29,7 @@ the `env.archived.yaml` file.
 
 - `snakemake/Snakefile`: Running Snakemake pipeline to convert `vsi` to `tif`
 - `snakemake/config/config.yaml`: Configuring Snakemake
-`snakemake/config/WRAPPER_SLURM`: Enabling Snakemake to run on a cluster. 
+- `snakemake/config/WRAPPER_SLURM`: Enabling Snakemake to run on a cluster. 
 The Snakemake profile is cluster-specific. The current wrapper is for the 
 [Slurm cluster of NIH Biowulf](https://hpc.nih.gov/docs/userguide.html).
 - `snakemake/config/sampletable.txt`: 
