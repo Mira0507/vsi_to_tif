@@ -39,4 +39,4 @@ Specifying sample names and corresponding input image paths
 - `snakemake/image_conversion.Rmd`: 
 Wrapper script running `bftools` for image conversion
 
-
+## Setting up Snakemake profile
