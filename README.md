@@ -73,4 +73,23 @@ $ echo '$SNAKEMAKE_PROFILE_V8=<path/to/snakemake_profile_v8>' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
+## Configuration
 
+- `conda_env`: String. A path to your conda environment.
+
+- `sampletable`: String. A path to your sampletable. The sampletable is 
+a tab-separated file consisting of two columns below
+
+    - *samplename*: unique sample identifiers
+    - *input_vsi*: paths to input `vsi` image files
+
+- `outdir`: String. A path to output directory. 
+
+- `ser`: String. A series to be converted. If set to *None*, a multi-channel 
+series with the highest resolution is selected. Otherwise, specify a series 
+of interest based on the metadata.
+
+- `pyramidal`: String. *Y* or *N*. If set to *Y*, the output image forms a pyramidal 
+format, being progressively downscaled throughout the series. For more details about
+a pyramidal image, refer to 
+[What is a pyramidal image?](https://www.microscopesinternational.com/support/kb/article/ngn1076.aspx).
