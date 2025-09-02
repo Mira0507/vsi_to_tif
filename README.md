@@ -171,3 +171,17 @@ $ tree
 - `image_conversion.html`: summary of image conversion process
 - `input_metadata.txt`: metadata of input `vsi` image
 - `output_metadata.txt`: metadata of output OME-TIFF image
+
+## Further steps
+
+Converted images can be loaded as a NumPy array in Python for a wide variety 
+of further image analyses.
+
+```python
+# Load required packages
+from tifffile import imread
+
+# Import the OME-TIFF input image
+img_array = imread(input_image)
+```
+
