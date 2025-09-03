@@ -174,8 +174,8 @@ $ tree
 
 ## Further steps
 
-Converted images can be loaded as a NumPy array in Python for a wide variety 
-of further image analyses.
+Converted images can be loaded as a NumPy array in Python for further 
+image analyses.
 
 ```python
 # Load required packages
