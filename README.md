@@ -14,8 +14,8 @@ conversion of multiple input `vsi` images at once. This approach uses
 [`bftools`](https://bio-formats.readthedocs.io/en/v8.3.0/users/comlinetools/index.html), 
 a collection of command-line tools provided by 
 the Bio-Formats library.
-Refer to the following documentation for more information about commands 
-used in the current workflow:
+Refer to the following documentation about commands used in the current 
+workflow:
 
 - [`showinf`](https://bio-formats.readthedocs.io/en/v8.3.0/users/comlinetools/display.html)
 - [`bfconvert`](https://bio-formats.readthedocs.io/en/v8.3.0/users/comlinetools/conversion.html)
@@ -91,7 +91,7 @@ series with the highest resolution is selected. Otherwise, specify a series
 of interest based on the metadata.
 
 - `pyramidal`: String. *Y* or *N*. If set to *Y*, the output image forms a pyramidal 
-format, being progressively downscaled throughout the series. For more details about
+structure, being progressively downscaled throughout the series. For more details about
 a pyramidal image, refer to 
 [What is a pyramidal image?](https://www.microscopesinternational.com/support/kb/article/ngn1076.aspx).
 
