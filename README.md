@@ -181,9 +181,10 @@ image analyses.
 
 ```python
 # Load required packages
-from tifffile import imread
+import dask.array as da
+from dask_image.imread import imread as dask_imread
 
-# Import the OME-TIFF input image
-img_array = imread(input_image)
+# Read image lazily using dask
+img_array = dask_imread(input_image)
 ```
 
