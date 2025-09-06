@@ -28,7 +28,7 @@ rule convert:
     output: 
         tif = "{outputdir}/{name}/converted.ome.tif",
         html = "{outputdir}/{name}/image_conversion.html"
-    threads: 1
+    threads: 2
     resources:
         mem_mb=1024 * 40,
         disk_mb=1024 * 20,
