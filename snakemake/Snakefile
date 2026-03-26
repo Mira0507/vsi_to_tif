@@ -46,7 +46,7 @@ rule convert:
             output_meta_out = "{wildcards.outputdir}/{wildcards.name}/output_metadata.txt",
             ser = "{params.series}",
             conda_env = "{params.conda_env}",
-            to_pyramidal = "{params.pyramidal}");
+            pyramidal = "{params.pyramidal}");
         rmarkdown::render("{input.rmd}",
             output_dir = "{wildcards.outputdir}/{wildcards.name}",
             intermediates_dir = "{wildcards.outputdir}/{wildcards.name}",
